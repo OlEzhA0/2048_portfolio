@@ -1,0 +1,187 @@
+
+
+.field {
+  width: 500px;
+  height: 500px;
+  border: 20px solid #bbada0;
+  border-radius: 5px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #bbada0;
+  grid-gap: 10px;
+}
+
+.cell {
+  position: relative;
+  background-color: #cdc1b4;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-size: 70px;
+  transition: all 0.4s;
+  text-align: center;
+  line-height: 117.5px;
+  font-weight: bold;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.new__item {
+  background-color: #cdc1b4;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-size: 70px;
+  text-align: center;
+  line-height: 117.5px;
+  font-weight: bold;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  animation: anim 0.5s linear;
+}
+
+.cell__2 {
+  background-color: #eee4da;
+  color: #776e65;
+}
+
+.cell__4 {
+  background-color: #ede0c8;
+  color: #776e65;
+}
+
+.cell__8 {
+  background-color: #f2b179;
+  color: #f9f6f2;
+}
+
+.cell__16 {
+  background-color: #f59563;
+  color: #f9f6f2;
+}
+
+.cell__32 {
+  color: #f9f6f2;
+  background: #f67c5f;
+}
+
+.cell__64 {
+  color: #f9f6f2;
+  background: #f65e3b;
+}
+
+.cell__128 {
+  font-size: 45px;
+  color: #f9f6f2;
+  background: #edcf72;
+}
+
+.cell__256 {
+  font-size: 45px;
+  color: #f9f6f2;
+  background: #edcc61;
+}
+
+.cell__512 {
+  font-size: 45px;
+  color: #f9f6f2;
+  background: #edc850;
+}
+
+.cell__1024 {
+  font-size: 35px;
+  color: #f9f6f2;
+  background: #edc53f;;
+}
+
+.cell__2048 {
+  font-size: 35px;
+  color: #f9f6f2;
+  background: #edc22e;
+}
+
+.score {
+  padding-top: 5px;
+  background-color: #bbada0;
+  width: 115px;
+  height: 55px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  color: #eee4da;
+  transition: all 0.2s;
+}
+
+.currentScore {
+  font-size: 35px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  top: 15px;
+}
+
+.newGame {
+  width: 130px;
+  height: 40px;
+  border: 0;
+  outline: 0;
+  color: #f9f6f2;
+  cursor: pointer;
+  background-color: #8f7a66;
+  font-size: 18px;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 540px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.gameOverDiv {
+  width: 545px;
+  height: 545px;
+  position: absolute;
+  top: 133px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 3px;
+  display: none;
+  background-color: #eee;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.gameOverText {
+  margin: 50px 0;
+  font-size: 65px;
+  text-align: center;
+  color: rgb(31, 15, 15);
+}
+
+.gameOverScore {
+  font-size: 65px;
+  text-align: center;
+  color: rgb(31, 15, 15);
+}
+
+.hint {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@keyframes anim {
+  0% {
+   border-radius: 30px;
+   opacity: 0.2;
+  }
+   
+  100% {
+    border-radius: 3px;
+    opacity: 1;
+  }
+}
